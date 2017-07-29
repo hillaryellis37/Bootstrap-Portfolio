@@ -6,17 +6,16 @@
 	<title>Hillary Portfolio</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-social.css">
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
 
-		<nav class="navbar navbar-default">
+		<nav id="navbar_override" class="navbar navbar-default">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -26,17 +25,17 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">Hillary Ellis</a>
+		      <a id="navbar_brand_override" class="navbar-brand" href="#">Hillary Ellis</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">About</a></li>
-		        <li><a href="#">Portfolio</a></li>
-		        <li><a href="#">Contact</a></li>
+		      <ul id="ul_override" class="nav navbar-nav navbar-right">
+		        <li><a href="index.html">About</a></li>
+		        <li><a href="portfolio.html">Portfolio</a></li>
+		        <li><a href="contact.html">Contact</a></li>
 
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -48,39 +47,39 @@
 		<div class="container">
 			
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-8">
-					<div class="page-header">
-		  				<h1>About Me</h1>
-					</div>							
-					<div class="row">
-						<div class="col-sm-3">	
-								<img src= "assets/images/Hillary_Surf_Image.png" class="img-responsive thumbnail" alt="Guess you cant see what I look like">
-						</div>
-						<div class="col-sm-9">
-							<div class="caption">
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+				<div class="about-me col-xs-12 col-sm-12 col-md-8">
+						<div class="page-header">
+			  				<h1>About Me</h1>
+						</div>							
+						<div class="row">
+							<div class="col-sm-3">	
+									<img src= "assets/images/Hillary_Surf_Image.png" class="img-responsive thumbnail" alt="Guess you cant see what I look like">
+							</div>
+							<div class="col-sm-9">
+								<div class="caption">
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+								</div>
 							</div>
 						</div>
-					</div>
 				</div> <!-- >>>col-sm-8 end -->
 				<div class="col-xs-12 col-sm-12 col-md-4">
 					<div class="panel panel-default">
-		  				<div class="panel-heading">
-		   					<h3 class="panel-title">Connect With Me</h3>
+		  				<div id="panel_heading_override" class="panel-heading">
+		   					<h3 id="panel_title_override" class="panel-title">Connect With Me</h3>
 		  				</div>
-		  				<div class="panel-body">
-		   					 <a class="btn btn-social-icon btn-github"><span class="fa fa-github"></span></a>
-		   					 <a class="btn btn-social-icon btn-stackoverflow"><span class="fa fa-stack-overflow"></span></a>
-		   					 <a class="btn btn-social-icon btn-linkedin"><span class="fa fa-linkedin"></span></a>
+		  				<div class="btn-group btn-group-lg panel-body">
+		   					 <a  href="https://github.com/hillaryellis37" class="btn btn-social-icon btn-github"><span class="fa fa-github"></span></a>
+		   					 <a href="https://stackoverflow.com/users/8152058/ladybrain37" class="btn btn-social-icon btn-stackoverflow"><span class="fa fa-stack-overflow"></span></a>
+		   					 <a href="https://www.linkedin.com/in/hillary-ellis-b0116125/" class="btn btn-social-icon btn-linkedin"><span class="fa fa-linkedin"></span></a>
 		  				</div>
 					</div>
 				</div> <!-- >>> col-sm-4 end -->
 			</div><!-- 	>>> row end -->
 		</div>  <!-- >>> Main contentcontainer end -->
 
-		<footer class="footer navbar-fixed-bottom">
+		<footer class="footer container-fluid text-center navbar-fixed-bottom">
 			<div class="container">
-				<span class="text-muted">© Copyright 2017 Hillary Ellis</span>
+				<span>© Copyright 2017 Hillary Ellis</span>
 			</div>
 		</footer>
 

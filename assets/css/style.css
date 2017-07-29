@@ -1,0 +1,35 @@
+body {
+    background-image: url("../images/cork-wallet.png");
+    background-color: #cccccc;
+}
+
+#navbar_override {
+	background-color: #ffffff;
+	font-family: Georgia, Times, serif;
+}
+
+#navbar_brand_override {
+	background-color: #4aaaa5;
+	color: white;
+}
+
+#ul_override {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+#panel_title_override {
+	color: #4aaaa5;
+	font-family: Georgia, Times, serif;
+}
+
+.about-me,
+#panel_heading_override {
+	background-color: white;
+}
+
+footer {
+	background-color: #666666;
+	color: white;
+
+}
